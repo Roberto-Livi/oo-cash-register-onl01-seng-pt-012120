@@ -20,7 +20,7 @@ class CashRegister
       x += 1
     end
     @total += (price.to_f * quantity)
-    last_transaction << price.to_f
+    last_transaction << price.to_f * quantity
   end
   
   def apply_discount
